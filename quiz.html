@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Test your knowledge with this HTML and CSS quiz.">
+    <meta name="author" content="Daniel Monteiro Botelho">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML and CSS Quiz</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="q1">1. What is the language used to structure the content of a web page?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div>
+                <label for="q2">2. Briefly explain the difference between padding and margin in CSS:</label>
+                <!-- Reducing the number of rows and columns to decrease the space -->
+                <textarea id="q2" name="q2" rows="1" cols="20" required></textarea>
+            </div>
+            <div>
+                <label for="q3">3. What is the property used to define the text color in CSS?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose an option...</option>
+                    <option value="color">Color</option>
+                    <option value="font-color">Font-Color</option>
+                    <option value="text-color">Text-Color</option>
+                </select>
+            </div>
+            <div>
+                <label for="q4">4. How many levels of headings (h1-h6) are available in HTML?</label>
+                <input type="number" id="q4" name="q4" min="1" max="6" required>
+            </div>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #5FA8D3;
+    --secondary-color: #D3D328;
+    --accent1-color: #57528C;
+    --accent2-color: #BBF5F3;
+
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --nav-background-color: #5FA8D3;
+    --nav-link-color: #57528C;
+    --nav-hover-link-color: #D3D328;
+    --nav-hover-background-color: #BBF5F3;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    text-align: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0; /* Remove o preenchimento */
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    margin-right: 10rem; /* Espaço à direita da imagem */
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+body {
+    max-width: 100rem;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+    padding: 20px; /* Espaçamento interno */
+}
+
+.footer-content {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaçamento entre eles */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.sociallinks {
+    display: flex; /* Usa flexbox para organizar os ícones de mídia social */
+}
+
+.sociallinks img {
+    width: 30px; /* Define a largura dos ícones de mídia social */
+}
+
+.sociallinks a {
+    margin-left: 10px; /* Adiciona margem à esquerda entre os ícones */
+}

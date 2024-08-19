@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #5FA8D3;
+    --secondary-color: #D3D328;
+    --accent1-color: #57528C;
+    --accent2-color: #BBF5F3;
+
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --nav-background-color: #5FA8D3;
+    --nav-link-color: #57528C;
+    --nav-hover-link-color: #D3D328;
+    --nav-hover-background-color: #BBF5F3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    text-align: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0; /* Remove o preenchimento */
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    margin-right: 10rem; /* Espaço à direita da imagem */
+}
+
+nav {
+    text-align: right;
+}
+
+.contact a {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--primary-color);
+
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.hero h2 {
+    color: var(--secondary-color);
+    font-size: 2rem; /* Tamanho do texto */
+    text-align: center; /* Alinhamento do texto */
+}
+
+
+
+.container {
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.hero img {
+    position: relative;
+    left: 38%; /* Centraliza horizontalmente */ 
+    width: 20%; /* ou o tamanho desejado */
+    display: block;
+    width: 25%; /* ou o tamanho desejado */
+    height: auto; /* para manter a proporção */
+}
+
+.hero {
+    position: relative;
+    overflow: hidden; /* Garante que o contêiner .hero se ajuste ao conteúdo */
+    align-items: center;
+}
+
+.hero article {
+    position: absolute;
+    top: 65%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+    width: 50%; /* ou o tamanho desejado */
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    padding: 15px 250px; /* ajuste o preenchimento conforme necessário */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+}
+
+.hero article p {
+    font-size: 1.5rem; /* Tamanho do texto */
+    text-align: left; /* Alinhamento do texto */
+    color: var(--accent2-color);
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Centraliza a tabela */
+}
+
+table, th, td {
+    border: 1px solid black; /* Adiciona uma borda */
+}
+
+body {
+    max-width: 100rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    list-style: none;
+
+}
+
+
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+}
+
+
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+    padding: 20px; /* Espaçamento interno */
+}
+
+.footer-content {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaçamento entre eles */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.sociallinks {
+    display: flex; /* Usa flexbox para organizar os ícones de mídia social */
+}
+
+.sociallinks img {
+    width: 30px; /* Define a largura dos ícones de mídia social */
+}
+
+.sociallinks a {
+    margin-left: 10px; /* Adiciona margem à esquerda entre os ícones */
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Gravity adventure</title>
+    <meta name="description" content="Contact us for more information or to request our services.">
+
+    <meta name="author" content="Daniel Monteiro Botelho">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <figure>
+                <img src="images/logo.png" alt="Rafting Site Logo">
+            </figure>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="https://botedan.github.io/wdd130/wwr/index.html">index.html</a></li>
+                    <li><a href="https://botedan.github.io/wdd130/wwr/about.html">about.html</a></li>
+                    <li><a href="https://botedan.github.io/wdd130/wwr/trips.html">trips.html</a></li>
+                    <li><a href="https://botedan.github.io/wdd130/wwr/contact.html">contact.html</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>  
+        <section id="company-info">
+            <h2>Company Information</h2>
+            <address>
+                Q. 04, 01 - Bela Vista, Palhoça - SC, 88130-000<br>
+              Phone: 00 55 53 9 9128-1384<br>
+              Email: daniel-botelho@hotmail.com.br<br>
+            </address>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14136.893227617302!2d-48.704603!3d-27.648562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527353f218a7a55%3A0x12eb0d6355edcf47!2sQ.%2004%2C%2001%20-%20Bela%20Vista%2C%20Palho%C3%A7a%20-%20SC%2C%2088130-000!5e0!3m2!1spt-BR!2sbr!4v1716691825421!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </section>
+        
+        <div class="contact-form">
+            <h1>Contact Form</h1>
+            <form action="submit.php" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div>
+                    <fieldset>
+                  <legend>Purpose of Message:</legend>
+                  <input type="radio" id="inquiry" name="purpose" value="Inquiry" checked>
+                  <label for="inquiry">General Inquiry</label><br>
+                  <input type="radio" id="booking" name="purpose" value="Booking">
+                  <label for="booking">Booking Question</label><br>
+                  <input type="radio" id="suggestion" name="purpose" value="Suggestion">
+                  <label for="suggestion">Website Suggestion</label><br>
+                </fieldset>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+               
+                </div>
+            <div>
+            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Subscribe me to the monthly newsletter</label><br>
+             
+            </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <section id="employee-profiles" class="employee-container">
+            <h2>Employee Profiles</h2>
+            <div class="employee">
+                <p>All our instructors ready to welcome you.</p>
+                <img src="images/happy_1.jpg" alt="Employee 1">
+            </div>
+            <div class="employee">
+                <p>Instructor Emily</p>
+                <img src="images/happy_2.png" alt="Employee 2">
+            </div>
+            <div class="employee">
+                <p>Instructors and students having fun together</p>
+                <img src="images/happy_3.jpg" alt="Employee 3">
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 | Wild Water Expeditions | Daniel Monteiro Botelho |   </p>
+            <a href="https://app.moqups.com/crXafoeOd2ZiP3C9SZEY4keWeLfIlZQz/view/page/ad64222d5">wirefreme</a>
+            <nav class="sociallinks">
+                <a href="https://www.facebook.com/daniel.monteirobotelho?locale=pt_BR"><img src="images/facebook_logo.webp" alt="Facebook"></a>
+                <a href=""><img src="images/twitter_logo.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/daniel__botelho_/?next=%2F"><img src="images/instagram_logo.webp" alt="Instagram"></a>
+            </nav>
+        </div>
+    </footer>
+    </body>
+
+</html>

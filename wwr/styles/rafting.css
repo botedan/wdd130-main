@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #5FA8D3;
+    --secondary-color: #D3D328;
+    --accent1-color: #57528C;
+    --accent2-color: #BBF5F3;
+
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --nav-background-color: #5FA8D3;
+    --nav-link-color: #57528C;
+    --nav-hover-link-color: #D3D328;
+    --nav-hover-background-color: #BBF5F3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    text-align: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0; /* Remove o preenchimento */
+}
+
+.map-container {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 600px; /* Define a largura do mapa */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    margin-right: 10rem; /* Espaço à direita da imagem */
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+main h2 {
+    font-size: 2rem; /* Tamanho do texto */
+    text-align: center; /* Alinhamento do texto */
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+address {
+    text-align: center;
+    text-decoration: underline;
+    margin-block: 20px;
+}
+
+.employee-container {
+    margin: 20px auto; /* Adiciona uma margem em torno da seção e a centraliza na página */
+    width: 100%; /* Define a largura da seção para 80% da largura da janela */
+}
+
+
+
+.employee {
+    display: inline-block; /* Faz com que os elementos .employee fiquem um ao lado do outro horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    width: calc(33.33% - 10px); /* Define a largura de cada elemento como 33.33% da largura do contêiner menos a margem entre eles */
+    margin-right: 10px; /* Adiciona uma margem à direita de 20px entre os elementos */
+}
+
+.employee img {
+    display: block; /* Faz com que as imagens ocupem a largura total do contêiner pai */
+    margin: 0 auto 10px; /* Adiciona margem na parte inferior das imagens */
+    width: 80%; /* Faz com que as imagens ocupem a largura total do contêiner pai */
+}
+
+.employee:last-child {
+    margin-right: 0; /* Remove a margem à direita do último elemento para evitar que haja espaço extra */
+}
+
+body {
+    max-width: 100rem;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+    padding: 20px; /* Espaçamento interno */
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaçamento entre eles */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.sociallinks {
+    display: flex; /* Usa flexbox para organizar os ícones de mídia social */
+}
+
+.sociallinks img {
+    width: 30px; /* Define a largura dos ícones de mídia social */
+}
+
+.sociallinks a {
+    margin-left: 10px; /* Adiciona margem à esquerda entre os ícones */
+}
+
+
+
+
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 20px;    
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004d99;
+}
